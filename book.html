@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>个人博客</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-color: #f5f6f7;
+            }
+            .navbar{
+                margin-bottom: 0;
+            }
+
+            .navbar-header > span{
+                display: inline-block;
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .main{
+                margin:30px 0;
+            }
+
+            .flex{
+                flex: 1;
+            }
+
+            p.text-ellipsis{
+                margin-bottom: 6px;
+                color:#777;
+            }
+
+            footer{
+                background-color: #1e2022!important;
+                color:#fff;
+                text-align: center;
+                padding:30px 0;
+            }
+
+            .box{
+                background: #fff;
+                margin: 8px 0;
+                border-radius: 10px;
+                padding: 0 10px 10px;
+            }
+
+            .box > h4{
+                padding: 13px 15px;
+                border-bottom: 1px solid #f1f4f9;
+                line-height: 16px;
+            }
+
+            .box p{
+                margin: 1px 0px 0px;
+                color: #a2a2a2;
+                line-height: 1.5;
+                font-size: 12px;
+                display: none;
+                text-align: justify !important;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box !important;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+
+            .box > div{
+                padding:10px;
+            }
+
+            .box > div:hover {
+                background-color: #f2f8fd;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                border-radius: 10px;
+            }
+
+        </style>
+	</head>
+	<body>
+		<header class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <span>个人博客</span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#h5-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm"> 
+                    <li><a href="re.html"><span class="glyphicon glyphicon-user"></span> 注册</a></li> 
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li> 
+                </ul> 
+                <nav id="h5-navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">博客首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            学习站台 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://www.csdn.net/">csdn</a></li>
+                          <li><a href="https://www.runoob.com/">菜鸟教程</a></li>
+                          <li><a href="https://www.douyin.com/">休闲一下</a></li>
+                        </ul>
+                      </li>
+                    <li class=""><a href="book.html">主修课程</a></li>
+                    <li class=""><a href="feedback.html">留言反馈</a></li>
+                    <li class=""><a href="/">关于我</a></li>
+                  </ul>
+                </nav>
+              </div>
+        </header>
+
+        <div class="main">
+            <div class="container">
+                <div class="row box">
+                    <h4>主修课</h4>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/ruanjian.png" width="40"></div>
+                            <div class="flex">
+                                <h5>软件工程第七版</h5>
+                                <p class="text-ellipsis">《软件工程》(第七版)是“十三五”职业教育国家规划教材、“十二五”职业教育国家规划教材、高职高专计算机教指委优秀教材，也是新世纪高职高专教材编审委员会组编的软件技术专业系列规划教材之一。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jQuery.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>jQuery和Ajax实战教程 I</h5>
+                                <p class="text-ellipsis">本书为“十三五”职业教育国家规划教材,也是高等教育出版社与爱前端科技有限公司(以下简称爱前端)联合出品的程序设计类实战教材｡本书以爱前端多年授课讲义为蓝本,由爱前端创始人､有着丰富开发和授课经验的邵山欢编写｡本书以互联网企业实际用人的要求为导向,总结近几年国家应用型本科与示范性高职院校相关专业教学改革经验及爱前端在前端开发培训领域多年经验编写而成｡</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/android.jpg"width="40"></div>
+                            <div class="flex">
+                                <h5>JavaAndroid应用开发基础</h5>
+                                <p class="text-ellipsis">本书的慕课视频和实践案例视频总时长720分钟。这些实践案例能帮助读者更好地理解Android各种知识在实际开发中的应用。本书适合作为高职高专院校计算机软件技术、移动互联应用技术及相关专业的教材，也可作为职业培训的教材或自学者的参考书，也可供从事移动开发的工作者学习参考。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>jsp程序设计案例教程</h5>
+                                <p class="text-ellipsis">本书通过一个电子商城系统的完整案例，详细介绍了使用JSP 技术进行Web 应用开发的基础知识和编程技巧，主要内容包括JSP 语言基础、JSP 核心技术及JSP 高级应用，并通过电子商务网站常见的8 大功能（用户注册、用户登录、网站计数器、商品信息查询、商品信息浏览、购物车、购物结算及订单查询、后台管理）的实现，详细讲述了使用JSP 技术开发电子商务网站的过程和方法。本书将知识介绍和技能训练有机结合，融“教、学、练、思”于一体，适合“案例教学、任务驱动、理论实践一体化”的教学模式。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/python.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>python程序设计</h5>
+                                <p class="text-ellipsis">本书是关于Python程序设计的基础课程教材。全书共分12章，系统介绍Python程序设计语言及其程序设计的方法与技术。本书结构合理，概念清晰，内容循序渐进，取材得当，书中提供的科学计算与数据分析项目基础及项目案例可为学习者的后续学习和项目开发提供较好的帮助。为便于教学，本书提供了高质量的配套PPT、微视频、扩展阅读、源代码以及习题参考答案和难点解析等教学资源。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/wangye.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>网页设计与制作微课教程</h5>
+                                <p class="text-ellipsis">本书配有丰富的教学资源，书中重要知识点和操作技能难点可以通过配套的微课视频进行学习。通过由简到繁、由易到难、承前启后的阶梯式系列单元任务，读者能够轻松地掌握综合运用HTML、CSS和JavaScript设计制作网页的方法和技能，并起到举一反三的效果。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row box">
+                    <h4>选修课</h4>
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/photo.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>photoshop cs5图形图像处理</h5>
+                                <p class="text-ellipsis">本书目标明确，结构新颖，图文并茂，通俗易懂，具有很强的操作性和实用性，既可作为高职高专学校有关图形图像处理技术类课程的教材，也可以作为广大平面设计人员及计算机图像处理学习者的参考书。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/MySQL.png" width="40"></div>
+                            <div class="flex">
+                                <h5>MySQL数据库应用案例教程</h5>
+                                <p class="text-ellipsis">本书共分18章，内容涵盖：数据库概述，MySQL的安装与配置，数据库基本操作，存储引擎、数据类型和字符集，数据表基本操作，数据的插入、修改和删除操作，单表数据记录查询，多表数据记录查询，运算符，MySQL常用函数，索引，视图，存储过程和函数，触发器，MySQL日志管理，数据的备份与恢复，MySQL的权限与安全，以及新闻发布系统数据库设计。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/PHP web.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>PHP web应用开发案例教程</h5>
+                                <p class="text-ellipsis">本书从初学者角度出发，使用通俗易懂的语言、丰富多彩的实例，详细讲述了使用PHP进行Web开发需要掌握的各种知识。全书分为基础篇、提高篇、案例篇，共3篇16章，</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jisuanji.jpg"width="40"></div>
+                            <div class="flex">
+                                <h5>计算机软件技术基础</h5>
+                                <p class="text-ellipsis">书由拥有20多年教学与研究经验的资深Java技术本书以数据结构及算法、数据库技术、软件工程技术等为主要内容，介绍计算机软件基础技术。</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/goujian.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>构建之法</h5>
+                                <p class="text-ellipsis">总结出了在 16 周的时间内让同学们通过 “做 中学 (Learning By Doing)” 掌握实用的软件工程技术的教学计划，并得到高校师生的积极反馈。在此 基础上，作者对软件工程的各个知识点和实战技能要求进行了系统性整理，形成教材</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/daima.jpg" width="40"></div>
+                            <div class="flex">
+                                <h5>代码大全2</h5>
+                                <p class="text-ellipsis">《代码大全2》是著名科技类作家史蒂夫·麦康奈尔的经典著作，是一本完整的软件构建手册，涵盖了软件构建过程中的所有细节。它从软件质量和编程思想等方面论述了软件构建的各个问题，并详细论述了紧跟时代潮流的新技术、高屋建瓴的观点、通用的概念，还含有丰富而典型的程序示例。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+           
+        <footer>
+            <p>© 2021-2023 刘宇小组个人博客</p>
+            <p>京ICP备11008151号-6</p>
+        </footer>
+	</body>
+</html>

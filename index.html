@@ -1,86 +1,313 @@
 <!DOCTYPE html>
-<head>
-    <title></title>
-    <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-    <div class="home">
-        <div class="content">
-            <div class="stars"></div>
-            <img class="bgc" src="image/190.jpg" width="100%" alt="">
-            <h3 class="title">欢迎来到我的个人博客</h3>
-            <h3 class="titles">我时常会思考，用一片童心思考问题，很多烦恼的问题就变得易解。</h3>
-            <img class="icon"  src="image/1920.jpg" alt="">
-            <div class='ribbon'>
-                <a href="me.html"><span>Home</span></a>
-                <a href="about.html"><span>About</span></a>
-                <a href="hobbies.html"><span>Hobbies</span></a>
-            </div>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>个人博客</title>
+		<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            body{
+                background-color: #f5f6f7;
+            }
+            .navbar{
+                margin-bottom: 0;
+            }
 
+            .navbar-header > span{
+                display: inline-block;
+                padding: 15px;
+                font-size: 16px;
+                font-weight: 500;
+            }
+
+            .album{
+                position: relative;
+            }
+
+            .carousel {
+                position: relative;
+                width: 100%;
+                height: 550px;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .carousel-item {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 550px;
+                opacity: 0;
+                transition: opacity 1s linear;
+                background-repeat: no-repeat;
+            }
+
+            .carousel-item.active {
+                opacity: 1;
+            }
+
+            .carousel-nav {
+                position: absolute;
+                left: 50%;
+                bottom: 10%;
+                transform: translateX(-50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 99;
+            }
+
+            .carousel-nav button {
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                border: none;
+                margin: 0 10px;
+                background-color: #fff;
+                cursor: pointer;
+                transition: all 0.3s ease;
+            }
+
+            .carousel-nav button.active {
+                width: 20px;
+                background-color: #ffcc33;
+
+            }
+
+            .article{
+                background-color: #ffffff;
+                border-radius: 8px;
+                padding: 20px;
+                margin: 10px 0;
+                height:200px;
+            }
+
+            .main{
+                margin:30px 0;
+            }
+
+            .flex{
+                flex: 1;
+            }
+
+            p.text-ellipsis{
+                margin-bottom: 6px;
+                color:#777;
+            }
+
+            footer{
+                background-color: #1e2022!important;
+                color:#fff;
+                text-align: center;
+                padding:30px 0;
+            }
+
+        </style>
+	</head>
+	<body>
+		<header class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <span>个人博客</span>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#h5-navbar-collapse">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm"> 
+                    <li><a href="re.html"><span class="glyphicon glyphicon-user"></span> 注册</a></li> 
+                    <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li> 
+                </ul> 
+                <nav id="h5-navbar-collapse" class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a href="">博客首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            学习站台 <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a href="https://www.csdn.net/">csdn</a></li>
+                          <li><a href="https://www.runoob.com/">菜鸟教程</a></li>
+                          <li><a href="https://www.douyin.com/">休闲一下</a></li>
+                        </ul>
+                      </li>
+                    <li class=""><a href="book.html">主修课程</a></li>
+                    <li class=""><a href="feedback.html">留言反馈</a></li>
+                    <li class=""><a href="about.html">关于我们</a></li>
+                  </ul>
+                </nav>
+              </div>
+        </header>
+        <div class="album hidden-xs hidden-sm">
+            <div class="carousel">
+                <div class="carousel-item active" style="background-image: url('./images/84707.jpg'); background-size: 100% auto;"></div>
+                <div class="carousel-item" style="background-image: url('./images/222.jpg'); background-size: 100% auto;"></div>
+            </div>
+            <div class="carousel-nav">
+                <button class="active"></button>
+                <button></button>
+            </div>
         </div>
-        <div class="icons">
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="image/shouzhutongxin.jpg" alt="">
-                <span>守住童心</span>
-            </div>
-            <div class="icons_items">
-                <img class="icons_items_imgs"  src="image/shanli.jpg" alt="">
-                <span>山里的风景</span>
-            </div>
-            <div class="icons_items">
-                <img class="icons_items_imgs" src="image/huli1.jpg" alt="">
-                <span>狐狸是人类的好朋友</span>
-            </div>
-            <div class="icons_items">
-                <img  class="icons_items_imgs" src="image/xianhua.jpg" alt="">
-                <span>玫瑰---惊艳了时光</span>
+
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>Web 技术概述</h4>
+                                <p class="text-ellipsis"> 
+								
+了解静态网页中静态的概念 ；<br>
+了解动态网页中动态的含义；<br>
+了解 Web 服务器了解网络数据库；<br>
+了解 ASP、PHP、JSP 和ASP.NET；<br>
+了解 C/S 结构与 B/S 结构，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>电子商城系统介绍 </h4>
+                                <p class="text-ellipsis">理解 eBuy 电子商城系统的基本设计思想；<br>
+熟悉系统需求分析；<br>
+熟悉系统功能模块设计；<br>
+熟悉系统界面设计；<br>
+熟悉系统主要流程设计；<br>
+熟悉数据库设计和详细设计，请详看下面的文章</p>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>搭建 JSP 开发环境 </h4>
+                                <p class="text-ellipsis">掌握 JDK 的安装与环境设置；<br>
+掌握 Tomcat 的安装与配置；<br>
+熟悉常用的 JSP 开发工具的使用，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>JSP 语法基础</h4>
+                                <p class="text-ellipsis">掌握 JSP 中注释的添加方法；<br>
+掌握 JSP 的脚本元素:声明、表达式和脚本程序的语法格式；<br>
+掌握 JSP 中 page 指令、include 指令的使用；<br>
+掌握 JSP 的 include 动作、forward 动作、param动作、plugin 动作等动作元素的使用，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>JSP 内置对象</h4>
+                                <p class="text-ellipsis">掌握 JSP 中 out 对象的使用方法；<br>
+掌握 JSP 中 request 对象的使用方法；<br>
+掌握 JSP 中 response 对象的使用方法；<br>
+掌握 JSP 中 session 对象的使用方法；<br>
+掌握 JSP 中 application 对象的使用方法；<br>
+掌握 JSP 中 config、page、exception 对象的使用方法；<br>
+掌握 JSP 中Cookie 对象的使用方法，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>数据库访问技术</h4>
+                                <p class="text-ellipsis">掌握 JDBC 的概念；<br>
+掌握 JDBC API主要内容；<br>
+熟悉和掌握 Statement 接口、Result 接口的常用方法和相关概念；<br>
+掌握 JSP 中检索数据库和更新数据库的方法；<br>
+掌握 JSP 中使用预编译 SQL 语句及执行存储过程的方法，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>JavaBean技术</h4>
+                                <p class="text-ellipsis">了解 JavaBean 的概念，掌握在 JSP 中编写 JavaBean 的方法；<br>
+掌握在 JSP 中使用 JavaBean 的方法；<br>
+熟悉并掌握应用 JavaBean 封装数据库访问操作；<br>
+熟悉并掌握应用 JavaBean 实现购物车；<br>
+熟悉并掌握应用 JavaBean 实现编码转换，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="article">
+                            <div style="float: left;margin-right: 20px;"><img src="images/jsp1.jpg" height="160"></div>
+                            <div class="flex">
+                                <h4>Servlet技术</h4>
+                                <p class="text-ellipsis">掌握 Servlet 的基本概念，了解 Servlet 的生命周期；<br>
+                                                        掌握编写和配置 Servlet、调用 Servlet 的方法；<br>
+                                                        掌握 Servlet 读取HTML 表单数据的方法；<br>
+                                                        掌握 Servlet 读取 Cookie 数据的方法；<br>
+掌握 Servlet 读取 Session 数据的方法；<br>
+掌握 Servlet 读取 HTTP 请求头数据的方法，请详看下面的文章</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <nav aria-label="Page navigation" class="text-center">
+                    <ul class="pagination">
+                      <li>
+                        <a href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li><a href="#">1</a></li>
+                      <li><a href="book.html">2</a></li>
+                      <li><a href="feedback.html">3</a></li>
+                      <li><a href="about.html">4</a></li>
+                      
+                      <li>
+                        <a href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
             </div>
         </div>
-        <div class="introduce">
-            <div class="introduce_item">
-                <img class="introduce_item_img"  src="image/tongxin2.jpg" alt="">
-                <span class="introduce_item_title">
-                    我们整天忙忙碌碌，像一群群没有灵魂的苍蝇，喧闹着，躁动着，听不到灵魂深处的声音。时光流逝，童年远去，我们渐渐长大，岁月带走了许许多多的回忆，也消蚀了心底曾今拥有的那份童稚的纯真，我们不顾心灵桎梏，沉溺于人世浮华，专注于利益法则，我们把自己弄丢了。<br><br>
-                    所有的大人都曾经是小孩，虽然，只有少数的人记得。<br><br>
-                    只有用心灵才能看得清事物本质，真正重要的东西是肉眼无法看见的
-                </span>
 
-            </div>
-            <div class="introduce_item">
+        <footer>
+            <p>© 2021-2023 刘宇小组个人博客</p>
+            <p>京ICP备11008151号-6</p>
+        </footer>
 
-                <span class="introduce_item_titles">小王子在离开了玫瑰后才明白爱的道理：“我那时什么也不懂！我应该根据她的行为，而不是她的话来判断她。她使我的生活芬芳多彩，我真不该离开她跑出来。我本应该猜出在她那笨拙的假话背后所隐藏的情爱。玫瑰花是多么的自相矛盾！可是我当时太年轻，还不懂得去爱她。”
-                    <br><br>我的花生命是短暂的，她只有四根刺可以保护自己，抵御世界，我却将她独自留在我的星球上了！
-                </span>
-                <img class="introduce_item_img"  src="image/huli2.jpg" alt="">
-            </div>
-            <div class="introduce_item">
-                <img class="introduce_item_img" src="image/xiaowangzi1.jpg" alt="">
-                <span class="introduce_item_title">狐狸说：“对我来说，你只是一个小男孩，就像其他成千上万个小男孩一样没有什么两样。我不需要你。你也不需要我。对你来说，我也只是一只狐狸，和其他成千上万的狐狸没有什么不同。但是，如果你驯养了我，我们就会彼此需要。对我来说，你就是我的世界里独一无二的了；我对你来说，也是你的世界里的唯一了。”</span>
-            </div>
-            <div class="introduce_item">
-                <span class="introduce_item_titles">玫瑰花：＂我并非如此的弱不禁风...夜晚的凉风对我倒有好处。我是一朵花啊。＂<br><br>
-                    她天真地显露出她那四根刺，随后又说道： “别这么磨蹭了。真烦人！你既然决定离开这儿，那么，快走吧！” 她其实是不愿意让小王子看到自己哭泣。她曾经是多么高傲的一朵花……<br><br>
-                    玫瑰在小王子离开时这样说，我当然爱你，没有让你感觉到，是我的不对。
-                </span>
-                <img class="introduce_item_img" src="image/mieguihua2.jpg" alt="">
-            </div>
-        </div>
-        <!-- <audio autoplay="autoplay" id="audio" loop="loop">
-                <source src="./video/music.mp3" type="audio/MP3">
-               
-        </audio>
-        <img class="music_img" src="./img/music.png" alt=""> -->
-    </div>
-
-</body>
-<!-- <script>
-    let mucics = document.getElementById('audio')
-    document.body.addEventListener('mousemove', function() {
-        setTimeout(() => {
-            mucics.play();
-        }, 2000);
-    }, false);
-</script> -->
-
+        <script src="./scroll.js"></script>
+	</body>
 </html>
-

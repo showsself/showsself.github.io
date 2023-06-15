@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<title>登录</title>
+	</head>
+	<body>
+		<form action="chaxun.html" method="post">
+		<div id="bigBox" class="site-doc-icon site-doc-anim">
+			<h1>图书馆登录页面</h1>
+			<div class="inputBox">
+				
+				<div class="inputText">
+					<input type="text" placeholder="请输入用户名" />
+				</div>
+				<div class="inputText">
+					<input type="password" placeholder="请输入密码" />
+				</div>
+					<button type="button" class="inputButton" value="" onclick="myFunction()" >登录</button>
+					<button type="button" class="inputButton" onclick="jumpRe()">注册</button>
+					
+				</form>
+			</div>
+		</div>
+		
+           <script type="text/javascript">
+			   //点击登录按钮跳转到查询页面
+			   function myFunction(){
+				   window.location.href='index.html';
+			   }
+			   
+		   </script>
+		<script type="text/javascript">
+		//写了函数，点击注册按钮就跳转到注册页面
+			function jumpRe(){
+			 window.location.href="re.html";
+			}
+		</script>
+		
+	</body>
+</html>
